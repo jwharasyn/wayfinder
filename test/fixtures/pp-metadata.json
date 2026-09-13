@@ -1,0 +1,783 @@
+{
+ "version": "1x7o",
+ "elapsed_secs": 1.860929012298584,
+ "response": {
+  "header": {
+   "succeeded": true,
+   "query_time": 1141,
+   "elapsed_secs_for_backend_requests": 1.7831690311431885
+  },
+  "body": {
+   "hits": {
+    "total": 27578,
+    "returned": 3,
+    "hits": [
+     {
+      "index": "prod-o-001",
+      "service_backend": "metadata",
+      "hit_type": "item",
+      "fields": {
+       "identifier": "MIT_LOGO_for_the_Apple_II_1981",
+       "title": "MIT LOGO for the Apple II (1981)",
+       "description": "MIT Logo for the Apple II (7/9/1981 version) Written by S. Hain, P. Sobalvarro, and L. Klotz under the supervision of H. Abelson.   Copyright (c) 1980, 1981 Massachusetts Institute of Technology (MIT).  This material was prepared with support of National Science Foundation Grant No. SED-7919033.  However, any opinions, findings, conclusions, or recommendations expressed herein are those of the authors and do not necessarily reflect the views of the NSF. Released under the MIT License (http://opensource.org/licenses/MIT), per e-mail correspondence with H. Abelson on 5 November 2012. Recovered and reassembled from source by Lars Brinkhoff (https://github.com/PDP-10/its/blob/master/src/aplogo/logo.299) in 2018.  Source code and assembler listing are attached to this item.",
+       "subject": [
+        "Apple II",
+        "Apple II software"
+       ],
+       "creator": [
+        "Apple II, Apple II software"
+       ],
+       "collection": [
+        "softwarelibrary_apple_contribs",
+        "softwarelibrary_apple",
+        "softwarelibrary",
+        "emulation"
+       ],
+       "date": "1981-07-09T00:00:00Z",
+       "year": 1981,
+       "language": [
+        "eng"
+       ],
+       "mediatype": "software",
+       "num_favorites": 5,
+       "item_size": 1389739,
+       "files_count": 21,
+       "downloads": 1473,
+       "week": 2,
+       "month": 29,
+       "indexflag": [
+        "index",
+        "nonoindex"
+       ],
+       "addeddate": "2018-12-10T05:46:38Z",
+       "publicdate": "2018-12-10T05:46:38Z"
+      },
+      "highlight": null,
+      "_score": [
+       18498.238
+      ]
+     },
+     {
+      "index": "prod-o-001",
+      "service_backend": "metadata",
+      "hit_type": "item",
+      "fields": {
+       "identifier": "1980-apple-ii-training",
+       "title": "Apple II Training",
+       "description": "Training for the Apple II",
+       "subject": [
+        "Apple Inc",
+        "Apple II"
+       ],
+       "creator": [
+        "Apple Inc."
+       ],
+       "collection": [
+        "applemedia",
+        "computersandtechvideos"
+       ],
+       "language": [
+        "eng"
+       ],
+       "mediatype": "movies",
+       "num_favorites": 3,
+       "item_size": 105356183,
+       "files_count": 36,
+       "downloads": 300,
+       "week": 1,
+       "month": 7,
+       "indexflag": [
+        "index",
+        "nonoindex"
+       ],
+       "addeddate": "2021-08-23T19:18:15Z",
+       "publicdate": "2021-08-23T19:18:15Z"
+      },
+      "highlight": null,
+      "_score": [
+       16454.492
+      ]
+     },
+     {
+      "index": "prod-o-001",
+      "service_backend": "metadata",
+      "hit_type": "item",
+      "fields": {
+       "identifier": "introducing-apple-ii",
+       "title": "Apple II ad",
+       "description": "Ad for the Apple II.",
+       "subject": [
+        "Apple Inc",
+        "Apple II"
+       ],
+       "creator": [
+        "Apple Inc."
+       ],
+       "collection": [
+        "applemedia",
+        "computersandtechvideos"
+       ],
+       "date": "1977-01-01T00:00:00Z",
+       "year": 1977,
+       "language": [
+        "eng"
+       ],
+       "mediatype": "movies",
+       "num_favorites": 16,
+       "item_size": 2590998,
+       "files_count": 14,
+       "downloads": 693,
+       "week": 6,
+       "month": 36,
+       "indexflag": [
+        "index",
+        "nonoindex"
+       ],
+       "addeddate": "2021-10-03T01:30:48Z",
+       "publicdate": "2021-10-03T01:30:48Z"
+      },
+      "highlight": null,
+      "_score": [
+       16420.066
+      ]
+     }
+    ]
+   },
+   "aggregations": {
+    "date_histogram": {
+     "buckets": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      3,
+      0,
+      4,
+      3,
+      7,
+      13,
+      22,
+      54,
+      209,
+      247,
+      519,
+      85,
+      147,
+      153,
+      156,
+      3037,
+      5310,
+      1185,
+      1104,
+      7434,
+      980
+     ],
+     "first_bucket_year": 1504,
+     "first_bucket_month": 1,
+     "last_bucket_year": 2024,
+     "last_bucket_month": 1,
+     "number_buckets": 53,
+     "interval_in_months": 120
+    },
+    "collection": {
+     "doc_count_error_upper_bound": 446,
+     "sum_other_doc_count": 141377,
+     "buckets": [
+      {
+       "key": "softwarelibrary",
+       "doc_count": 12081,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "emulation",
+       "doc_count": 10905,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "softwarelibrary_apple",
+       "doc_count": 9492,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "apple_ii_library_4am",
+       "doc_count": 3372,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "internetarchivebooks",
+       "doc_count": 1930,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "manuals",
+       "doc_count": 1567,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "inlibrary",
+       "doc_count": 1514,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "magazine_rack",
+       "doc_count": 1461,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "folkscanomy",
+       "doc_count": 1181,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "fedlink",
+       "doc_count": 1105,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "usdanationalagriculturallibrary",
+       "doc_count": 1069,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "folkscanomy_computer",
+       "doc_count": 1057,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "computermagazines",
+       "doc_count": 1032,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "apple_ii_library_educational",
+       "doc_count": 948,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "podcasts",
+       "doc_count": 875,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "softwarelibrary_c64",
+       "doc_count": 756,
+       "doc_count_error_upper_bound": 0
+      }
+     ],
+     "redacted_buckets": [
+      {
+       "key": "americana",
+       "doc_count": 1957,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "printdisabled",
+       "doc_count": 1956,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "community",
+       "doc_count": 928,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "deemphasize",
+       "doc_count": 796,
+       "doc_count_error_upper_bound": 0
+      }
+     ]
+    },
+    "year_histogram": {
+     "buckets": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      3,
+      0,
+      4,
+      3,
+      7,
+      13,
+      22,
+      53,
+      209,
+      247,
+      519,
+      85,
+      147,
+      154,
+      156,
+      3041,
+      5312,
+      1186,
+      1104,
+      7435,
+      980
+     ],
+     "first_bucket_key": 1504,
+     "last_bucket_key": 2026,
+     "number_buckets": 53,
+     "interval": 10
+    },
+    "mediatype": {
+     "doc_count_error_upper_bound": 0,
+     "sum_other_doc_count": 0,
+     "buckets": [
+      {
+       "key": "software",
+       "doc_count": 12688,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "texts",
+       "doc_count": 8981,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "audio",
+       "doc_count": 2708,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "movies",
+       "doc_count": 2184,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "etree",
+       "doc_count": 360,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "image",
+       "doc_count": 289,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "data",
+       "doc_count": 282,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "collection",
+       "doc_count": 74,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "web",
+       "doc_count": 12,
+       "doc_count_error_upper_bound": 0
+      }
+     ]
+    },
+    "year": {
+     "doc_count_error_upper_bound": 109,
+     "sum_other_doc_count": 5859,
+     "buckets": [
+      {
+       "key": 1983,
+       "doc_count": 1173,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1984,
+       "doc_count": 1142,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2017,
+       "doc_count": 957,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1985,
+       "doc_count": 955,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2023,
+       "doc_count": 923,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2021,
+       "doc_count": 882,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2018,
+       "doc_count": 859,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2022,
+       "doc_count": 820,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1982,
+       "doc_count": 810,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2016,
+       "doc_count": 770,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1986,
+       "doc_count": 762,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1987,
+       "doc_count": 716,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2019,
+       "doc_count": 705,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2015,
+       "doc_count": 613,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2020,
+       "doc_count": 545,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1988,
+       "doc_count": 528,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1981,
+       "doc_count": 478,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2024,
+       "doc_count": 448,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1989,
+       "doc_count": 385,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 2014,
+       "doc_count": 361,
+       "doc_count_error_upper_bound": 0
+      }
+     ]
+    }
+   },
+   "collection_titles": {
+    "podcasts": "Podcasts",
+    "softwarelibrary_apple": "The Software Library: Apple Computer",
+    "fedlink": "FEDLINK - United States Federal Collection",
+    "softwarelibrary_c64": "Software Library: C64",
+    "softwarelibrary": "Software Library",
+    "softwarelibrary_apple_contribs": "Software Library: Apple Floppy Contributions",
+    "applemedia": "Apple Computer Media and Video",
+    "apple_ii_library_educational": "Apple II Library: Educational",
+    "usdanationalagriculturallibrary": "National Agricultural Library",
+    "computersandtechvideos": "Computers & Technology",
+    "folkscanomy_computer": "Folkscanomy Computer: Books on Computers and Programming",
+    "emulation": "The Emulation Station",
+    "computermagazines": "Computer Magazines",
+    "apple_ii_library_4am": "Apple II Library: The 4am Collection",
+    "internetarchivebooks": "Internet Archive Books",
+    "manuals": "The Manual Library",
+    "folkscanomy": "Folkscanomy: A Library of Books",
+    "magazine_rack": "The Magazine Rack"
+   }
+  },
+  "hit_schema": {
+   "item": {
+    "identifier": {
+     "multivalue": false,
+     "mapping": "string"
+    },
+    "noindex": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "optional": true
+    },
+    "title": {
+     "multivalue": false,
+     "mapping": "string",
+     "optional": true
+    },
+    "description": {
+     "multivalue": false,
+     "mapping": "string",
+     "dressing": {
+      "truncate": 1000
+     },
+     "optional": true
+    },
+    "subject": {
+     "multivalue": true,
+     "mapping": "string",
+     "dressing": {
+      "truncate": 1000
+     },
+     "optional": true
+    },
+    "creator": {
+     "multivalue": true,
+     "mapping": "string",
+     "optional": true
+    },
+    "collection": {
+     "multivalue": true,
+     "mapping": "string",
+     "comment": "may be a superset of metadata collection field"
+    },
+    "date": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "year": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed from date",
+     "optional": true
+    },
+    "genre": {
+     "multivalue": true,
+     "mapping": "string",
+     "optional": true
+    },
+    "volume": {
+     "multivalue": false,
+     "mapping": "string",
+     "optional": true
+    },
+    "type": {
+     "multivalue": false,
+     "mapping": "string",
+     "optional": true
+    },
+    "language": {
+     "multivalue": true,
+     "mapping": "string",
+     "optional": true
+    },
+    "mediatype": {
+     "multivalue": false,
+     "mapping": "string"
+    },
+    "licenseurl": {
+     "multivalue": false,
+     "mapping": "string__url",
+     "optional": true
+    },
+    "num_favorites": {
+     "multivalue": false,
+     "mapping": "integer",
+     "optional": true,
+     "comment": "computed during document construction"
+    },
+    "num_reviews": {
+     "multivalue": false,
+     "mapping": "integer",
+     "optional": true,
+     "comment": "computed during document construction"
+    },
+    "item_size": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "bytes; computed during document construction"
+    },
+    "files_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction"
+    },
+    "item_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction",
+     "optional": true
+    },
+    "displayed_item_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction, may be inferred from item_count",
+     "optional": true
+    },
+    "collection_files_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction, for collection items only",
+     "optional": true
+    },
+    "collection_size": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "bytes; computed during document construction, for collection items only",
+     "optional": true
+    },
+    "downloads": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "total views over item lifetime, updated by audit consultation with Views API",
+     "optional": true
+    },
+    "week": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "views over a seven-day period, updated by audit consultation with Views API",
+     "optional": true
+    },
+    "month": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "views over a month, updated by audit consultation with Views API",
+     "optional": true
+    },
+    "indexflag": {
+     "multivalue": true,
+     "mapping": "string",
+     "comment": "item characterization including noindex status"
+    },
+    "lending___available_to_borrow": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "lending___available_to_browse": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "lending___available_to_waitlist": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "lending___status": {
+     "multivalue": false,
+     "mapping": "string",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "avg_rating": {
+     "multivalue": false,
+     "mapping": "integer",
+     "optional": true
+    },
+    "addeddate": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "issue": {
+     "multivalue": false,
+     "mapping": "string",
+     "comment": "format varies",
+     "optional": true
+    },
+    "source": {
+     "multivalue": false,
+     "mapping": "string",
+     "comment": "format varies",
+     "optional": true
+    },
+    "reviewdate": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "publicdate": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "date_favorited": {
+     "multivalue": false,
+     "mapping": "date",
+     "comment": "not metadata; only present in favorites lists, sourced from Lists API",
+     "optional": true
+    },
+    "reviews_data": {
+     "multivalue": true,
+     "dressing": {
+      "truncate": false
+     },
+     "mapping": "string",
+     "comment": "untruncated JSON encoded data used for Account reviews",
+     "optional": true
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,158 @@
+:root {
+  --accent: #b8442c;
+  /* From the logo: the clock hands are slate, the dial's search bar is gold on cream. */
+  --primary: #3a4a5e;
+  --focus: #8a6d33;
+  --focus-fill: #fbf6e8;
+  --ink: #1c1a17;
+  --muted: #6f6a63;
+  --line: #e2ddd5;
+  --bg: #faf8f4;
+  --card: #ffffff;
+}
+* { box-sizing: border-box; }
+/* Author `display` rules (#filters, .more) outrank the UA sheet's [hidden] rule
+   regardless of specificity, so the hidden attribute needs an author-origin rule. */
+[hidden] { display: none !important; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+header, main { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 28px; }
+h1 { font-size: 20px; margin: 0 0 12px; color: var(--primary); }
+#search-form { display: flex; gap: 8px; }
+.q-wrap { position: relative; flex: 1; display: flex; }
+/* Room on the right for the ✕ so it never sits on top of the query text.
+   appearance:none is for iOS: Safari gives input[type=search] its own native
+   chrome, including the focus ring, and ignores parts of the styling below until
+   the native appearance is off. Chrome renders identically either way. */
+#q { flex: 1; -webkit-appearance: none; appearance: none; font-size: 17px; padding: 10px 40px 10px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+/* The default focus ring is the platform blue, which is off-palette (and loud on
+   iOS). Gold ring + cream fill instead, on both :focus and :focus-visible so the
+   box lights up however it was reached. rgba, not color-mix, so the computed
+   value stays a plain rgba() the verify check can assert on. */
+#q:focus, #q:focus-visible { outline: none; border-color: var(--focus); box-shadow: 0 0 0 3px rgba(138, 109, 51, .28); background: var(--focus-fill); }
+/* The native search cancel button is invisible on touch; #clear replaces it. */
+#q::-webkit-search-cancel-button, #q::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
+button { font-size: 15px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); cursor: pointer; }
+#search-form button[type="submit"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+/* Scoped to #search-form so it outranks the base button rule above. */
+#search-form #clear { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; padding: 0; border: none; border-radius: 50%; background: var(--line); color: var(--muted); font-size: 16px; line-height: 32px; text-align: center; }
+#search-form #clear:hover { color: var(--ink); }
+#tabs { display: flex; gap: 4px; margin: 16px 0 0; border-bottom: 1px solid var(--line); }
+.tab { border: none; background: none; padding: 8px 14px; color: var(--muted); border-bottom: 2px solid transparent; border-radius: 0; }
+.tab.active { color: var(--ink); border-bottom-color: var(--primary); }
+/* The pane keeps its box on the Items tab even when both children are hidden,
+   which pushed the hero 12px lower there than on Full-text and Web. Pad only
+   when something is actually showing. */
+#filters { padding: 0; }
+#filters:has(> :not([hidden])) { padding: 8px 0 4px; }
+#active { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+/* One long collection name must not widen the page: clip it, never scroll sideways. */
+.pill { font-size: 13px; padding: 4px 10px; border-radius: 999px; background: var(--accent); color: #fff; border-color: var(--accent); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pill.clear { background: none; color: var(--muted); border-color: var(--line); }
+.facet-row { border-top: 1px solid var(--line); }
+.facet-row:last-child { border-bottom: 1px solid var(--line); }
+.facet-head { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px; padding: 6px 4px; border: none; border-radius: 0; background: none; text-align: left; font-size: 13px; }
+.facet-label { flex: none; width: auto; min-width: 76px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.facet-summary { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 2px 12px; color: var(--muted); overflow-wrap: anywhere; }
+.facet-summary .sum.selected { color: var(--ink); font-weight: 600; }
+/* Open, the summary only repeats the pills below it. Hiding it removes the flex:1
+   filler, so the chevron needs its own push to stay pinned right. */
+.facet-row.open .facet-summary { display: none; }
+.chev { flex: none; margin-left: auto; color: var(--muted); font-size: 18px; line-height: 1; transition: transform .15s; }
+.facet-row.open .chev { transform: rotate(90deg); }
+.facet-body { padding: 0 4px 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 13px; padding: 4px 10px; border-radius: 999px; white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.chip.selected { background: var(--ink); color: #fff; border-color: var(--ink); }
+.year-range { display: flex; gap: 6px; margin-top: 8px; }
+.facet-row input { width: 80px; padding: 4px 6px; font-size: 13px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); }
+/* Same gold, thinner: these two are small, so they keep the plain fill. */
+.facet-row input:focus { outline: none; border-color: var(--focus); box-shadow: 0 0 0 2px rgba(138, 109, 51, .28); }
+main { padding-bottom: 60px; }
+/* The dial is both the landing image and the spinner; it lives outside the panes
+   so whichever tab is active gets it. */
+#hero { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 48px 0 24px; color: var(--muted); }
+#hero .dial { width: 200px; height: 200px; }
+#hero p { margin: 0; }
+/* Visually gone, still in the accessibility tree: the live region has to keep
+   announcing "Searching…" while the dial spins. */
+#hero.loading p { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+/* Only the compass ring and the two hands move: the ring turns clockwise, the
+   hands turn counter-clockwise — back in time — with the minute hand running 12×
+   the hour hand, like a real clock in reverse. The face, the
+   centre pin and the glass stay put.
+   transform-box: view-box makes the origin the viewBox rect, and the groups live
+   inside translate(42 42), so the dial centre is 470,470 in their own space. */
+#hero .dial #ring, #hero .dial #hour, #hero .dial #minute { transform-box: view-box; transform-origin: 470px 470px; }
+#hero.loading .dial #ring   { animation: ring-cw 14s linear infinite; }
+#hero.loading .dial #minute { animation: hand-ccw 4s linear infinite; }
+#hero.loading .dial #hour   { animation: hand-ccw 48s linear infinite; }  /* 12:1, like a clock, run backwards */
+@keyframes ring-cw { to { transform: rotate(360deg); } }
+@keyframes hand-ccw { to { transform: rotate(-360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  #hero.loading .dial #ring, #hero.loading .dial #hour, #hero.loading .dial #minute { animation: none; }
+  #hero.loading .dial { animation: dial-pulse 1.2s ease-in-out infinite; }
+  @keyframes dial-pulse { 50% { opacity: .45; } }
+}
+.status { padding: 24px 0; color: var(--muted); }
+.status .retry { margin-left: 8px; }
+.row { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.row:hover { background: #f3efe8; }
+.row img { width: 80px; height: 80px; object-fit: cover; border-radius: 6px; flex: none; }
+.row .body { min-width: 0; }
+/* Linked rows (Web tab) use an <a> as the body; keep it looking like the text it wraps. */
+.row a.body { color: inherit; text-decoration: none; }
+.row h3 { margin: 0 0 2px; font-size: 16px; }
+.row .meta { color: var(--muted); font-size: 13px; }
+.row .desc { margin: 4px 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.row .snippet { margin: 4px 0 0; font-size: 14px; }
+mark { background: #f6d9cf; color: inherit; border-radius: 2px; padding: 0 1px; }
+.detail { padding: 12px 0 20px; border-bottom: 1px solid var(--line); }
+.detail iframe { width: 100%; aspect-ratio: 16/9; border: 1px solid var(--line); border-radius: 8px; background: #000; }
+.detail .files { margin: 12px 0 0; padding: 0; list-style: none; }
+.detail .files li { padding: 3px 0; font-size: 14px; overflow-wrap: anywhere; } /* long IA file names must wrap on phones */
+.detail .files a { color: var(--accent); }
+.detail .inside-match { font-size: 14px; margin: 4px 0; }
+.detail .inside-match .pg { color: var(--muted); font-size: 12px; margin-right: 6px; }
+.more { display: block; margin: 20px auto; }
+a { color: var(--accent); }
+@media (max-width: 560px) {
+  .row img { width: 56px; height: 56px; }
+}
+.detail .chips-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.chip.scope { background: var(--bg); }
+.detail .related { margin: 12px 0; color: var(--muted); font-size: 14px; }
+.detail .related h4 { margin: 0 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.detail .related .row { padding: 8px 0; }
+.detail .related .row img { width: 48px; height: 48px; }
+.detail .related .row, .detail .related .detail { color: var(--ink); font-size: 15px; }
+.row:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+#demo-banner { background: #fff4e5; border: 1px solid #f0d9b5; border-radius: 8px; padding: 8px 12px; font-size: 14px; margin-bottom: 12px; }
+footer { max-width: 860px; margin: 0 auto; padding: 24px 16px 40px; color: var(--muted); font-size: 13px; text-align: center; }
+.glyph { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; margin-right: 4px; background: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
+.glyph.dot { width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; -webkit-mask: none; mask: none; }
+.glyph[data-icon="book"] { --icon: url(icons/book.svg); }
+.glyph[data-icon="film-strip"] { --icon: url(icons/film-strip.svg); }
+.glyph[data-icon="music-note"] { --icon: url(icons/music-note.svg); }
+.glyph[data-icon="microphone"] { --icon: url(icons/microphone.svg); }
+.glyph[data-icon="floppy-disk"] { --icon: url(icons/floppy-disk.svg); }
+.glyph[data-icon="images"] { --icon: url(icons/images.svg); }
+.glyph[data-icon="webpage"] { --icon: url(icons/webpage.svg); }
+.glyph[data-icon="spreadsheet"] { --icon: url(icons/spreadsheet.svg); }
+.chip .glyph { width: 13px; height: 13px; }
+/* Guard: this rule follows .glyph.dot at equal specificity, so without it a dot
+   on a chip would inherit 13px and paint as a heavy black circle. chip() no
+   longer prepends one, but the sizing trap stays disarmed either way. */
+.chip .glyph.dot { display: none; }
+.detail .desc-full { margin: 0 0 8px; }
+.detail .desc-full p { margin: 0 0 8px; }
+.detail .desc-full ul, .detail .desc-full ol { margin: 0 0 8px 20px; padding: 0; }
+.detail .desc-full pre { white-space: pre-wrap; font-size: 13px; }
+.detail .desc-full a { color: var(--accent); }
+.detail .desc-full > *:last-child { margin-bottom: 0; }
+/* Collapsed long descriptions: ~7 lines, faded out at the bottom, "Read more" beneath. */
+.detail .desc-full.collapsed { max-height: 10.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.detail .read-more { font-size: 13px; padding: 4px 12px; margin: 0 0 10px; border-radius: 999px; color: var(--primary); border-color: var(--primary); background: var(--card); }

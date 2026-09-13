@@ -1,0 +1,770 @@
+{
+ "version": "1x7o",
+ "elapsed_secs": 2.259864091873169,
+ "response": {
+  "header": {
+   "succeeded": true,
+   "query_time": 1935,
+   "elapsed_secs_for_backend_requests": 2.200408935546875
+  },
+  "body": {
+   "hits": {
+    "total": 1676,
+    "returned": 3,
+    "hits": [
+     {
+      "index": "prod-o-001",
+      "service_backend": "metadata",
+      "hit_type": "item",
+      "fields": {
+       "identifier": "1983ArgentinaApple2Brochure",
+       "title": "Apple II+ Brochure (Argentina 1983)",
+       "description": "An Apple II+ Brochure from Argentina, 1983.",
+       "subject": [
+        "Apple II",
+        "Apple II+",
+        "Apple II plus",
+        "computer catalog"
+       ],
+       "creator": [
+        "Apple Computer"
+       ],
+       "collection": [
+        "manuals-apple",
+        "computermanuals",
+        "manuals",
+        "manuals_apple"
+       ],
+       "date": "1983-01-01T00:00:00Z",
+       "year": 1983,
+       "language": [
+        "spa"
+       ],
+       "mediatype": "texts",
+       "item_size": 14306729,
+       "files_count": 17,
+       "downloads": 366,
+       "week": 0,
+       "month": 11,
+       "indexflag": [
+        "index",
+        "nonoindex"
+       ],
+       "addeddate": "2018-05-09T17:29:05Z",
+       "publicdate": "2018-05-09T17:29:05Z"
+      },
+      "highlight": null,
+      "_score": [
+       15296.64
+      ]
+     },
+     {
+      "index": "prod-o-001",
+      "service_backend": "metadata",
+      "hit_type": "item",
+      "fields": {
+       "identifier": "a2dum",
+       "title": "Apple II DOS User's Manual",
+       "description": "Apple II DOS User's Manual",
+       "subject": [
+        "Apple 2",
+        "Apple II"
+       ],
+       "creator": [
+        "Apple Computer Inc"
+       ],
+       "collection": [
+        "manuals_apple",
+        "manuals"
+       ],
+       "date": "1983-01-01T00:00:00Z",
+       "year": 1983,
+       "language": [
+        "eng"
+       ],
+       "mediatype": "texts",
+       "num_favorites": 5,
+       "item_size": 1171287826,
+       "files_count": 16,
+       "downloads": 485,
+       "week": 4,
+       "month": 16,
+       "indexflag": [
+        "index",
+        "nonoindex"
+       ],
+       "addeddate": "2023-02-09T21:26:51Z",
+       "publicdate": "2023-02-09T21:26:51Z"
+      },
+      "highlight": null,
+      "_score": [
+       15072.864
+      ]
+     },
+     {
+      "index": "prod-o-001",
+      "service_backend": "metadata",
+      "hit_type": "item",
+      "fields": {
+       "identifier": "aiicg",
+       "title": "Apple II Computer Graphics",
+       "description": "Apple II Computer Graphics",
+       "subject": [
+        "Apple 2",
+        "Apple II"
+       ],
+       "creator": [
+        "Ken Williams, Bob Kernaghan, & Lisa Kernaghan"
+       ],
+       "collection": [
+        "manuals_apple",
+        "manuals"
+       ],
+       "date": "1983-01-01T00:00:00Z",
+       "year": 1983,
+       "language": [
+        "eng"
+       ],
+       "mediatype": "texts",
+       "num_favorites": 5,
+       "item_size": 341015137,
+       "files_count": 17,
+       "downloads": 611,
+       "week": 2,
+       "month": 9,
+       "indexflag": [
+        "index",
+        "nonoindex"
+       ],
+       "addeddate": "2022-11-03T04:58:41Z",
+       "publicdate": "2022-11-03T04:58:41Z"
+      },
+      "highlight": null,
+      "_score": [
+       14670.742
+      ]
+     }
+    ]
+   },
+   "aggregations": {
+    "date_histogram": {
+     "buckets": [
+      359,
+      14,
+      19,
+      19,
+      14,
+      17,
+      22,
+      18,
+      20,
+      13,
+      21,
+      87,
+      351,
+      18,
+      14,
+      20,
+      20,
+      25,
+      27,
+      20,
+      17,
+      18,
+      19,
+      20,
+      303,
+      20,
+      20,
+      16,
+      14,
+      15,
+      18,
+      12,
+      17,
+      18,
+      19,
+      12
+     ],
+     "first_bucket_year": 1983,
+     "first_bucket_month": 1,
+     "last_bucket_year": 1985,
+     "last_bucket_month": 12,
+     "number_buckets": 36,
+     "interval_in_months": 1
+    },
+    "collection": {
+     "doc_count_error_upper_bound": 45,
+     "sum_other_doc_count": 5811,
+     "buckets": [
+      {
+       "key": "magazine_rack",
+       "doc_count": 489,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "computermagazines",
+       "doc_count": 356,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "manuals",
+       "doc_count": 290,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "folkscanomy",
+       "doc_count": 169,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "internetarchivebooks",
+       "doc_count": 154,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "government-documents",
+       "doc_count": 151,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "usgovernmentmirrors",
+       "doc_count": 151,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "inlibrary",
+       "doc_count": 147,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "folkscanomy_computer",
+       "doc_count": 133,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "emulation",
+       "doc_count": 123,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "softwarelibrary",
+       "doc_count": 121,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "softwarelibrary_apple",
+       "doc_count": 121,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "flux_capacity",
+       "doc_count": 120,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "flux_capacity_hagstrom",
+       "doc_count": 117,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "the_stacks",
+       "doc_count": 116,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "paulhagstrom_stacks",
+       "doc_count": 115,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "manuals_apple",
+       "doc_count": 110,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "applemagazines",
+       "doc_count": 103,
+       "doc_count_error_upper_bound": 44
+      }
+     ],
+     "redacted_buckets": [
+      {
+       "key": "fav-drkiwi",
+       "doc_count": 183,
+       "doc_count_error_upper_bound": 44
+      },
+      {
+       "key": "printdisabled",
+       "doc_count": 153,
+       "doc_count_error_upper_bound": 44
+      }
+     ]
+    },
+    "year_histogram": {
+     "buckets": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      1,
+      3,
+      0,
+      4,
+      0,
+      4,
+      5,
+      6,
+      14,
+      22,
+      45,
+      177,
+      183,
+      334,
+      284,
+      64,
+      100,
+      121,
+      116,
+      111,
+      2119,
+      1864,
+      728,
+      549,
+      213,
+      169,
+      26
+     ],
+     "first_bucket_key": 1617,
+     "last_bucket_key": 2026,
+     "number_buckets": 52,
+     "interval": 8
+    },
+    "mediatype": {
+     "doc_count_error_upper_bound": 0,
+     "sum_other_doc_count": 0,
+     "buckets": [
+      {
+       "key": "software",
+       "doc_count": 1507,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "texts",
+       "doc_count": 1506,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "movies",
+       "doc_count": 26,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "image",
+       "doc_count": 24,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "audio",
+       "doc_count": 23,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "data",
+       "doc_count": 6,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": "etree",
+       "doc_count": 3,
+       "doc_count_error_upper_bound": 0
+      }
+     ]
+    },
+    "year": {
+     "doc_count_error_upper_bound": 44,
+     "sum_other_doc_count": 2796,
+     "buckets": [
+      {
+       "key": 1983,
+       "doc_count": 599,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1984,
+       "doc_count": 492,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1982,
+       "doc_count": 434,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1985,
+       "doc_count": 415,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1986,
+       "doc_count": 336,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1987,
+       "doc_count": 313,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1981,
+       "doc_count": 302,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1988,
+       "doc_count": 203,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1989,
+       "doc_count": 197,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1990,
+       "doc_count": 159,
+       "doc_count_error_upper_bound": 2
+      },
+      {
+       "key": 1980,
+       "doc_count": 145,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1993,
+       "doc_count": 122,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1992,
+       "doc_count": 121,
+       "doc_count_error_upper_bound": 4
+      },
+      {
+       "key": 1995,
+       "doc_count": 115,
+       "doc_count_error_upper_bound": 5
+      },
+      {
+       "key": 1991,
+       "doc_count": 114,
+       "doc_count_error_upper_bound": 0
+      },
+      {
+       "key": 1996,
+       "doc_count": 94,
+       "doc_count_error_upper_bound": 2
+      },
+      {
+       "key": 1994,
+       "doc_count": 88,
+       "doc_count_error_upper_bound": 4
+      },
+      {
+       "key": 1999,
+       "doc_count": 76,
+       "doc_count_error_upper_bound": 8
+      },
+      {
+       "key": 2003,
+       "doc_count": 76,
+       "doc_count_error_upper_bound": 8
+      },
+      {
+       "key": 2002,
+       "doc_count": 73,
+       "doc_count_error_upper_bound": 10
+      }
+     ]
+    }
+   },
+   "collection_titles": {
+    "softwarelibrary": "Software Library",
+    "internetarchivebooks": "Internet Archive Books",
+    "folkscanomy_computer": "Folkscanomy Computer: Books on Computers and Programming",
+    "usgovernmentmirrors": "US Government Mirrored Documents (Citizen Collection)",
+    "paulhagstrom_stacks": "The Paul Hagstrom Stacks",
+    "computermagazines": "Computer Magazines",
+    "computermanuals": "Computer Manuals (Hardware and Software)",
+    "applemagazines": "Apple Computer Periodicals",
+    "manuals_apple": "Manuals: Apple Inc.",
+    "flux_capacity": "Flux Capacity: Flux-Readings of Computer Floppies",
+    "the_stacks": "The Stacks: Collections of Incoming Contributions",
+    "flux_capacity_hagstrom": "Flux Capacity: The Hagstrom Collection",
+    "manuals-apple": "Apple Computer Manuals",
+    "softwarelibrary_apple": "The Software Library: Apple Computer",
+    "emulation": "The Emulation Station",
+    "government-documents": "Government Documents (Worldwide)",
+    "manuals": "The Manual Library",
+    "magazine_rack": "The Magazine Rack",
+    "folkscanomy": "Folkscanomy: A Library of Books",
+    "softwarelibrary_c64_games": "Software Library: C64: Games",
+    "softwarelibrary_atari": "The Software Library: Atari Computer",
+    "atari_8bit_library_games": "Atari 8-Bit Library: Games",
+    "softwarelibrary_msdos": "The Software Library: MS-DOS",
+    "softwarelibrary_c64": "Software Library: C64",
+    "softwarelibrary_msdos_games": "Software Library: MS-DOS Games",
+    "fedlink": "FEDLINK - United States Federal Collection",
+    "apple_tech_info_library": "Apple Technical Information Library",
+    "usda-commodityforeignnews": "Foreign news on various commodities",
+    "apple_documentation": "Folkscanomy: Apple Computer-Related Documentation",
+    "usdanationalagriculturallibrary": "National Agricultural Library"
+   }
+  },
+  "hit_schema": {
+   "item": {
+    "identifier": {
+     "multivalue": false,
+     "mapping": "string"
+    },
+    "noindex": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "optional": true
+    },
+    "title": {
+     "multivalue": false,
+     "mapping": "string",
+     "optional": true
+    },
+    "description": {
+     "multivalue": false,
+     "mapping": "string",
+     "dressing": {
+      "truncate": 1000
+     },
+     "optional": true
+    },
+    "subject": {
+     "multivalue": true,
+     "mapping": "string",
+     "dressing": {
+      "truncate": 1000
+     },
+     "optional": true
+    },
+    "creator": {
+     "multivalue": true,
+     "mapping": "string",
+     "optional": true
+    },
+    "collection": {
+     "multivalue": true,
+     "mapping": "string",
+     "comment": "may be a superset of metadata collection field"
+    },
+    "date": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "year": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed from date",
+     "optional": true
+    },
+    "genre": {
+     "multivalue": true,
+     "mapping": "string",
+     "optional": true
+    },
+    "volume": {
+     "multivalue": false,
+     "mapping": "string",
+     "optional": true
+    },
+    "type": {
+     "multivalue": false,
+     "mapping": "string",
+     "optional": true
+    },
+    "language": {
+     "multivalue": true,
+     "mapping": "string",
+     "optional": true
+    },
+    "mediatype": {
+     "multivalue": false,
+     "mapping": "string"
+    },
+    "licenseurl": {
+     "multivalue": false,
+     "mapping": "string__url",
+     "optional": true
+    },
+    "num_favorites": {
+     "multivalue": false,
+     "mapping": "integer",
+     "optional": true,
+     "comment": "computed during document construction"
+    },
+    "num_reviews": {
+     "multivalue": false,
+     "mapping": "integer",
+     "optional": true,
+     "comment": "computed during document construction"
+    },
+    "item_size": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "bytes; computed during document construction"
+    },
+    "files_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction"
+    },
+    "item_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction",
+     "optional": true
+    },
+    "displayed_item_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction, may be inferred from item_count",
+     "optional": true
+    },
+    "collection_files_count": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "computed during document construction, for collection items only",
+     "optional": true
+    },
+    "collection_size": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "bytes; computed during document construction, for collection items only",
+     "optional": true
+    },
+    "downloads": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "total views over item lifetime, updated by audit consultation with Views API",
+     "optional": true
+    },
+    "week": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "views over a seven-day period, updated by audit consultation with Views API",
+     "optional": true
+    },
+    "month": {
+     "multivalue": false,
+     "mapping": "integer",
+     "comment": "views over a month, updated by audit consultation with Views API",
+     "optional": true
+    },
+    "indexflag": {
+     "multivalue": true,
+     "mapping": "string",
+     "comment": "item characterization including noindex status"
+    },
+    "lending___available_to_borrow": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "lending___available_to_browse": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "lending___available_to_waitlist": {
+     "multivalue": false,
+     "mapping": "boolean",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "lending___status": {
+     "multivalue": false,
+     "mapping": "string",
+     "comment": "may be stale",
+     "optional": true
+    },
+    "avg_rating": {
+     "multivalue": false,
+     "mapping": "integer",
+     "optional": true
+    },
+    "addeddate": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "issue": {
+     "multivalue": false,
+     "mapping": "string",
+     "comment": "format varies",
+     "optional": true
+    },
+    "source": {
+     "multivalue": false,
+     "mapping": "string",
+     "comment": "format varies",
+     "optional": true
+    },
+    "reviewdate": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "publicdate": {
+     "multivalue": false,
+     "mapping": "date",
+     "optional": true
+    },
+    "date_favorited": {
+     "multivalue": false,
+     "mapping": "date",
+     "comment": "not metadata; only present in favorites lists, sourced from Lists API",
+     "optional": true
+    },
+    "reviews_data": {
+     "multivalue": true,
+     "dressing": {
+      "truncate": false
+     },
+     "mapping": "string",
+     "comment": "untruncated JSON encoded data used for Account reviews",
+     "optional": true
+    }
+   }
+  }
+ }
+}
