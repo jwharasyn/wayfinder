@@ -29,7 +29,7 @@ query, three tabs.
 
 ## Try it
 
-Live demo: **DEMO_URL** — rate-limited and shared, so please self-host for
+Live demo: **https://ia-search.quest** — rate-limited and shared, so please self-host for
 real use. If it says it's busy, that's the demo protecting archive.org.
 
 ## Run it
